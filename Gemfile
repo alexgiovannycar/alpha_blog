@@ -1,5 +1,4 @@
 source "https://rubygems.org"
-ruby '3.3.6'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.0"
@@ -63,7 +62,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :production do 
-  gem 'pg'
+group :production do
+  gem 'pg', '~> 1.5.9'
+  gem 'rails_12factor'
 end
-
