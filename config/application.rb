@@ -6,7 +6,9 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module AlphaBloh
+# The application module name is used throughout Rails for things like
+# autoloading.  A typo here leaks into logs and generated files.
+module AlphaBlog
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
